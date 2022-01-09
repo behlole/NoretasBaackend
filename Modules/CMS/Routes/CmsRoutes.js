@@ -39,4 +39,12 @@ router.get('/clients', cms_controller.indexClients);
 router.post('/clients', upload.single('img_url'), cms_controller.createClients);
 
 
+router.post('/contact_form', cms_controller.createContactForm);
+router.get('/contact_form', cms_controller.indexContactForm);
+
+
+router.get('/about_us_sections',cms_controller.indexAboutUsSections);
+router.post('/about_us_sections',cms_controller.createAboutUsSections);
+
+
 module.exports = router;
